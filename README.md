@@ -1,44 +1,47 @@
-# Gerador-de-Relatorio-de-Vendas
-Com certeza! Um bom README.md valoriza muito o seu projeto, especialmente se você pretende continuar evoluindo ele.
+# Gerador de Relatório de Vendas
+Este projeto evoluiu de uma ferramenta de automação via linha de comando para uma aplicação web interativa. O sistema gerencia dados de vendas armazenados em um arquivo CSV, permitindo o registro e a visualização de relatórios de forma prática.
 
-Aqui está uma estrutura profissional que você pode copiar, colar no arquivo README.md do seu projeto e ajustar se desejar:
+## 🚀 Funcionalidades Atuais
+Web App (Interface Gráfica)
+Gestão via Navegador: Adicione novas vendas através de um formulário interativo.
 
-Gerador de Relatório de Vendas
-Este é um projeto desenvolvido em Ruby com o objetivo de automatizar a geração de relatórios a partir de dados de vendas armazenados em um arquivo CSV. O sistema oferece uma interface de linha de comando (CLI) intuitiva para facilitar a análise de dados.
+Visualização Dinâmica: Tabela organizada com Data, Produto, Vendedor e Valor, lida diretamente do seu arquivo CSV.
 
-## 🚀 Funcionalidades
-Visualização Completa: Exibe todas as vendas registradas de forma organizada em uma tabela.
+Versão CLI (Linha de Comando)
+Relatórios Automáticos: Exibe total de vendas, valor total e ticket médio.
 
-Resumo de Vendas: Calcula e exibe o total de itens, valor total arrecadado e o ticket médio das vendas.
+Filtros Inteligentes: Busca por vendedor específico.
 
-Filtro por Vendedor: Permite selecionar um vendedor específico para visualizar apenas as suas respectivas vendas.
-
-Exportação: Salva o resumo das vendas em um arquivo de texto (relatorio.txt) para consultas futuras.
+Exportação: Gera um arquivo relatorio.txt com o resumo das análises.
 
 ## 🛠️ Tecnologias Utilizadas
 Linguagem: Ruby
 
+Web Framework: Sinatra (para a interface web)
+
 Gerenciamento de Dados: CSV
 
-Interface de Terminal: tty-prompt para menus interativos e terminal-table para exibição de dados.
+CLI: tty-prompt e terminal-table
 
 ## 💻 Como Rodar
+### 1. Pré-requisitos
 Certifique-se de ter o Ruby instalado em sua máquina.
 
-### Clone este repositório:
-git clone https://github.com/084VYTIN/Gerador-de-Relatorio-de-Vendas.git
+### 2. Instale as dependências
+No seu terminal, instale o Sinatra e os pacotes da CLI:
+gem install sinatra tty-prompt terminal-table
 
-### Instale as dependências necessárias:
-gem install tty-prompt terminal-table
+### 3. Modos de Execução
+Para usar a versão Web:
+- ruby web.rb
+- Acesse http://localhost:4567 no seu navegador.
 
-### Execute o programa:
+Para usar a versão CLI original:
 ruby app.rb
 
 ## 📈 Próximos Passos
-Este projeto está em constante evolução. Futuramente, pretendo adicionar:
+[ ] Implementar banco de dados real (SQLite) para substituir o CSV.
 
-[ ] Geração de relatórios em formato PDF ou Excel.
+[ ] Melhorar o visual da interface web com CSS (Bootstrap/Tailwind).
 
-[ ] Filtros por período (data).
-
-[ ] Gráficos simples diretamente no terminal.
+[ ] Adicionar gráficos dinâmicos de vendas.
