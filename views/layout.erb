@@ -2,15 +2,29 @@
 <html>
 <head>
     <title>Controle de Vendas</title>
-    <style>
-        body { font-family: sans-serif; margin: 40px; background-color: #f4f4f9; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; background-color: white; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #4CAF50; color: white; }
-        form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        input { margin-bottom: 10px; padding: 8px; width: 100%; box-sizing: border-box; }
-        button { background-color: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; }
-    </style>
+    <<style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 40px; background-color: #f4f4f9; }
+
+    form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
+    input { margin-bottom: 15px; padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+   
+    button { 
+        background-color: #28a745; 
+        color: white; 
+        padding: 12px 20px; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        font-size: 16px; 
+        transition: background-color 0.3s ease; /* Efeito suave */
+    }
+    button:hover { background-color: #218838; } /* Cor mais escura ao passar o mouse */
+    
+    table { border-collapse: collapse; width: 100%; background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    th, td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+    th { background-color: #007bff; color: white; }
+    tr:hover { background-color: #f1f1f1; } /* Destaque na linha da tabela */
+</style>
 </head>
 <body>
     <%= yield %>
